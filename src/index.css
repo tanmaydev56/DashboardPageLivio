@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face{
+    font-family:"Apfel Grotezk";
+    src:url("/src/assets/fonts/ApfelGrotezk-Regular.woff")
+  }
+  @font-face{
+    font-family:"Integral CF";
+    src:url("/src/assets/fonts/Fontspring-DEMO-integralcf-regular.otf")
+  }

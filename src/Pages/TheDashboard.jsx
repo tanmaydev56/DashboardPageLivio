@@ -83,7 +83,7 @@ const TheDashboard = () => {
                 fontWeight:"400",
                 fontStyle:"normal",
                 lineHeight:"30px"
-            }}> Today Sales</text>
+            }}>Today’s Sales</text>
             <text style={{
                 color:"#515062",
                 fontFamily:"Apfel Grotezk",
@@ -405,9 +405,10 @@ const TheDashboard = () => {
             fontSize:"24px",
             fontStyle:"normal",
             fontWeight:"400",
-            lineHeight:"30px",
-            padding:"20px",
-           marginRight:"380px"
+            paddingBottom:"25px",
+            paddingLeft:"40px",
+           
+           width:"100%"
            
         }}> Visitor Insights</text>
         
@@ -569,7 +570,7 @@ const TheDashboard = () => {
         fontSize:"24px",
         fontStyle:"normal",
         fontWeight:"400",
-        marginTop:"30px"
+        marginTop:"15px"
         
         
         
@@ -770,11 +771,12 @@ const TheDashboard = () => {
             
             color:"#515062",
             fontFamily:"Integral CF",
-            fontSize:"24px",
+            fontSize:"21px",
             fontStyle:"normal",
             fontWeight:"400",
             lineHeight:"32px",
-
+            paddingBottom:"15px",
+            width:"100%",
         }}>Sales Mapping by Country</text>
         <img src="/Map.png" alt="" style={{
            background:"transparent",

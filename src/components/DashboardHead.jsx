@@ -10,14 +10,14 @@ const DashboardHead = () => {
     }}>
         <text style={{
             color:"#F47D4A",
-            fontFamily:"Apfel Grotezk sans-serif",
+            fontFamily:"Apfel Grotezk ",
             fontSize:"96px",
             fontWeight:"500",
             fontStyle:"normal",
             lineHeight:"100px"
         }}>Dashboard</text>
         <div style={{
-            width:"415px",
+            width:"457px",
             height:"5px",
             flexShrink:"0",
             marginTop:"10px",
