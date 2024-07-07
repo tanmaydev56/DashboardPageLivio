@@ -6,7 +6,7 @@ const DashboardHead = () => {
         display:"flex",
         justifyContent:"flex-start",
         flexDirection:"column",
-        marginLeft:"110px"
+        marginLeft:"90px"
     }}>
         <text style={{
             color:"#F47D4A",
