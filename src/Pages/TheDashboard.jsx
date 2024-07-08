@@ -485,6 +485,7 @@ const TheDashboard = () => {
                      fontStyle: "normal",
                      fontWeight: "bold",
                      lineHeight: "20px", 
+                    
                 }}>8.822</div>
             </div>
             <div style={{display:"flex",

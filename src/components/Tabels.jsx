@@ -95,7 +95,7 @@ background:"#F0F9FF"
   animateOnRender
   labelColor="#00E096"
   trackHeight="4px"
-  transitionDuration="0.5s"
+  transitionDuration="0.9s"
   transitionTimingFunction="ease-in-out"
   transitionDelay="0s"
   completed={78}
