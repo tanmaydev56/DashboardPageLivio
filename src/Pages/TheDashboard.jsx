@@ -493,7 +493,7 @@ const TheDashboard = () => {
                      fontStyle: "normal",
                      fontWeight: "bold",
                      lineHeight: "20px", 
-                      margnTop:"10px"
+                    
                 }}>8.822</div>
             </div>
             <div style={{display:"flex",
@@ -539,7 +539,7 @@ const TheDashboard = () => {
                     fontStyle: "normal",
                     fontWeight: "bold",
                     lineHeight: "20px", /* 142.857% */
-                   margnTop:"10px"
+                   
                    
                 }}>12.122</div>
             </div>
