@@ -530,6 +530,7 @@ const TheDashboard = () => {
                     fontSize: "14px",
                     fontStyle: "normal",
                     fontWeight: "bold",
+                      marginTop:"10px", 
                      /* 142.857% */
                    
                    
