@@ -7,6 +7,7 @@ import SideButtons from "../components/SideButtons"
 import ProgressBar from "@ramonak/react-progress-bar"
 import AccessibleTable from "../components/Tabels"
 import { color } from "chart.js/helpers"
+import LineCharts from "../components/LineCharts"
 
 
 const TheDashboard = () => {
@@ -411,17 +412,8 @@ const TheDashboard = () => {
            width:"100%"
            
         }}> Visitor Insights</text>
+        <LineCharts/>
         
-        <img  style={{
-            width:"510px",
-            height:"250px",
-            flexShrink:"0",
-            borderRadius:"20px",
-            objectFit:"cover",
-            background:"transparent"
-            
-
-        }} src="/image.png" alt="" />
         </div>
         
     <div style={{
