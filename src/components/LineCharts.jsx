@@ -101,14 +101,19 @@ const LineCharts = () => {
             }}
           />
           <YAxis
+
             type="number"
             domain={[0, 400]}
             ticks={[0, 100, 200, 300, 400]}
             allowDecimals={false}
             axisLine={false}
+
             tickLine={false}
+          
             tick={{ fill: "#8884d8" }}
+            grid
             style={{
+                
                 
               fontSize: '16px', 
               fontFamily: "Apfel Grotezk",

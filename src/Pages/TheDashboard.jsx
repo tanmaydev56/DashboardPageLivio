@@ -41,15 +41,9 @@ const TheDashboard = () => {
            
             
         }}> 
-            <div style={{
-                display:"flex",
-                flexDirection:"column",
-                
-              
-
-            }}> 
+          
              <SideButtons/>
-                  </div>
+                
 
 
 
@@ -484,7 +478,7 @@ const TheDashboard = () => {
                      fontSize: "14px",
                      fontStyle: "normal",
                      fontWeight: "bold",
-                     lineHeight: "20px", 
+                    marginTop:"10px"
                     
                 }}>8.822</div>
             </div>
@@ -530,7 +524,7 @@ const TheDashboard = () => {
                     fontSize: "14px",
                     fontStyle: "normal",
                     fontWeight: "bold",
-                    lineHeight: "20px", /* 142.857% */
+                    marginTop:"10px", /* 142.857% */
                    
                    
                 }}>12.122</div>
