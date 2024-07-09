@@ -11,3 +11,7 @@
     font-family:"Integral CF";
     src:url("/src/assets/fonts/Fontspring-DEMO-integralcf-regular.otf")
   }
+  body{
+    background: #F2F7F2;
+    overflow-x: hidden;
+}

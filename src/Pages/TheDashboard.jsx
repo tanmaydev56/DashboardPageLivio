@@ -478,11 +478,9 @@ const TheDashboard = () => {
                      fontSize: "14px",
                      fontStyle: "normal",
                      fontWeight: "bold",
-<<<<<<< HEAD
-                    marginTop:"10px"
-=======
+
                      marginTop:"10px", 
->>>>>>> 9f1700c4601c0f07768bd045e5b3f272bcb6f9c3
+
                     
                 }}>8.822</div>
             </div>
@@ -528,12 +526,10 @@ const TheDashboard = () => {
                     fontSize: "14px",
                     fontStyle: "normal",
                     fontWeight: "bold",
-<<<<<<< HEAD
-                    marginTop:"10px", /* 142.857% */
-=======
+
                       marginTop:"10px", 
                      /* 142.857% */
->>>>>>> 9f1700c4601c0f07768bd045e5b3f272bcb6f9c3
+
                    
                    
                 }}>12.122</div>

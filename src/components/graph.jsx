@@ -9,7 +9,7 @@ const Graph = ({ chartData }) => {
         <div className={styles.lineGraph}>
             <div className={styles.head}>
             <p className={styles.salesHead}>Overall Sales</p>
-            <select className={styles.month}>
+            <select className={styles.month} style={{cursor:"pointer"}}>
                 <option>This Month</option>
                 <option>This Month</option>
                 <option>This Month</option>
@@ -17,10 +17,10 @@ const Graph = ({ chartData }) => {
             </div>
             <div className={styles.fig}>
                 <p className={styles.figure}>$238,560.93</p>
-                <p className={styles.percent}><img src={up}  alt="up arrow"/>13.02%</p>
+                <p className={styles.percent}><img src={up} style={{transform:"translate(-20px,15px)"}} alt="up arrow"/>13.02%</p>
             </div>
            
-            <Line style={{padding:"20px"}}
+            <Line style={{padding:"20px",marginTop:"10px"}}
                 data={chartData}
                 options={{
                     scales: {
@@ -43,7 +43,9 @@ weight: "600",
 height: "normal"
                                 },
                                 color: "#BCBCBC",
+                               
                             },
+                           
                             grid: {
                                
                                 borderDash: [10, 5]
@@ -56,6 +58,7 @@ height: "normal"
                             type: 'linear',
                             min: 24,
                             max: 35,
+                            offset: true,
                             ticks: {
                                 stepSize: 1,
                                 font:{
@@ -65,12 +68,13 @@ height: "normal"
                                     size: "14.22px",
                                     style: "normal",
                                     weight: "600",
-                                    height: "normal"
+                                    height: "normal",
+                                   
                                                                     },
                                                                     color: "#BCBCBC",
 
                             },
-                            
+                            paddingLeft:"20px",
                             grid: {
                                 display:false,
                                 borderDash: [10, 5]
@@ -83,7 +87,10 @@ height: "normal"
                    
                     elements: {
                         point: {
-                            radius: 4,
+                            radius: (ctx) => {
+                                const dataIndex = ctx.dataIndex;
+                                return [0, 2, 4, 6, 8, 10,11].includes(dataIndex) ? 0 : 4;
+                            },
                             borderWidth: 1,
                             borderColor: 'black',
                             backgroundColor: 'white',

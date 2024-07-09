@@ -13,201 +13,98 @@ import yellow from "../assets/images/yellow.png"
 import gray from "../assets/images/gray.png"
 import red from "../assets/images/red.png"
 import green from "../assets/images/green.png"
+import styles from "../styles/table.module.css"
  function AccessibleTableTwo() {
   return (
     <ResponsiveContainer>
-      <TableContainer
-        style={{
-         paddingTop:"80px",
-         paddingLeft:"20px",
-         marginTop:"-50px",
-          background: "#E9EEE9",
-          border:"none",
-          zIndex:"-2",
-           borderRadius: "20.366px"
-        }}
-        component={Paper}
-      >
-        <Table
-          width="968px"
-          height= "387.502px"
-          border="none"
-         
-           border-radius= "20.366px"
-          style={{
-            background: "#E9EEE9",
-            border:"none",
-            borderRadius: "20.366px",
-            
-          }}
-        >
-          <TableHead>
-            
-            <TableRow sx={{
-                '& th': { border: "none" },
-                '& td': { border: "none" }
-              }}>
-           
-             
-              <TableCell align="left" style={{color: "#606060",
+     <div style={{width: "968px",
+height: "410.502px",background: "#E9EEE9",borderRadius: "20.366px",
+border: "2px solid #EFEEEB",paddingTop:"10px",boxShadow:"4px 4px 16px 0px rgba(0, 0, 0, 0.10), -4px -4px 16px 0px rgba(244, 125, 74, 0.10)",marginTop:"20px"}}>
+   <div style={{display:"flex", justifyContent:"space-between",zIndex:"2" ,paddingLeft:"30px",paddingRight:"30px",transform:"translateY(10px)"}}>
+          <text style={{color: "#000",
 
 fontFamily: "Apfel Grotezk",
-fontSize: "14px",
+fontSize: "18px",
 fontStyle: "normal",
 fontWeight: "400",
-lineHeight: "normal"}}> Product Name</TableCell>
-              <div style={{display:"flex",gap:"100px", border:"none",background:"transparent",transform:"translateX(120px)"}}>
-              <TableCell style={{color: "#606060",
+lineHeight: "normal"}} >Selling Products</text>
+          <div style={{ position: 'relative', display: 'inline-block' }}>
+      <select style={{
+        height: "30px",
+        border: "none",
+        padding: "7px",
+        paddingLeft: "9px",
+        paddingRight: "34px",  // Add padding to the right side
+        borderRadius: "12px",
+        background: "#F6F6F6",
+        color: "#000",
+        fontFamily: "Apfel Grotezk",
+        fontSize: "14px",
+        fontStyle: "normal",
+        fontWeight: "400",
+        lineHeight: "normal",
+        appearance: "none", // Remove default arrow
+        WebkitAppearance: "none", // For Safari
+        MozAppearance: "none",
+        cursor:"pointer" // For Firefox
+      }}>
+        <option>8 Jul - 24 Jul</option>
+        <option>8-24 July</option>
+        <option>8-24 July</option>
+        <option>8-24 July</option>
+      </select>
+      <div style={{
+        
+        position: 'absolute',
+        top: '50%',
+        right: '15px', // Adjust this value to control the padding
+        pointerEvents: 'none',
+        transform: 'translateY(-50%)',
+        borderLeft: '5px solid transparent',
+        borderRight: '5px solid transparent',
+        borderTop: '5px solid #000', // Adjust color to match the text
+      }}></div>
+    </div>
+                </div>
+     <div className={styles.headings}><p>Product Name</p>
+     <div className={styles.adjust}>
+     <p>Price</p>
+     <p>Sold</p>
+     <p>Status</p>
+     </div>
+</div>
+      <div className={styles.contentPro}>
+       <div className={styles.ProCol}>
+        <div className={styles.images}>
+          <img className={styles.tshirt}src={black}/>
+          <img className={styles.tshirt}src={yellow}/>
+          <img className={styles.tshirt}src={gray}/>
+        </div>
+         <div className={styles.proName}>
+          <p>Marvel Thor Movie Print Marble T...</p>
+          <p>Aero Shorts Pants Multipacks S...</p>
+          <p>Erigo T-Shirts Green</p>
+        </div>
+        </div>
+     
+      <div className={styles.ProPrice}>
+        <p>$23</p>
+        <p>$23</p>
+        <p>$23</p>
+      </div>
+      <div className={styles.ProSold}>
+      <p>53pcs</p>
+        <p>53pcs</p>
+        <p>53pcs</p>
+      </div>
+      <div className={styles.ProStatus}>
+        <p className={styles.status}><img className={styles.dot}src={green}/>In Stock</p>
+        <p className={styles.status}><img className={styles.dot}src={red}/>Out of Stock</p>
+        <p className={styles.status}><img className={styles.dot}src={green}/>In Stock</p>
+      </div>
+      </div>
 
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "400",
-lineHeight: "normal"}}>Price</TableCell>
-              <TableCell style={{color: "#606060",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "400",
-lineHeight: "normal"}}>Sold</TableCell>
-              <TableCell style={{color: "#606060",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "400",
-lineHeight: "normal"}}>Status</TableCell>
-              </div>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow sx={{
-                '& th': { border: "none" },
-                '& td': { border: "none" }
-              }}>
-             
-              <TableCell component="th" scope="row" style={{alignItems:"center" ,height:"10px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img  style={{alignItems:"center" , transform:"translateY(15px)",paddingRight:"15px"}}src={black}/>Marvel Thor Movie Print Marble T...</TableCell>
-              <TableCell component="th" scope="row" align="left" style={{color: "#F47D4A",
-transform:"translate(120px,20px)",
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight:" 700",
-lineHeight: "normal"}}>$23</TableCell>
-              
-              <TableCell align="left" component="th" scope="row" style={{transform:"translate(-162px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}>53 pcs</text> 
-              </TableCell>
-             <TableCell align="right" component="th" scope="row" style={{transform:"translate(-97px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img style={{transform:"translateX(-10px)"}} src={green}/>In Stock</text> 
-              </TableCell>
-            </TableRow>
-            <TableRow sx={{
-                '& th': { border: "none" },
-                '& td': { border: "none" }
-              }}>
-              
-              <TableCell component="th" scope="row" style={{alignItems:"center" ,height:"65px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img  style={{alignItems:"center" , transform:"translateY(15px)",paddingRight:"15px"}}src={yellow}/>Aero Shorts Pants Multipacks S...</TableCell>
-              <TableCell component="th" scope="row" align="left" style={{color: "#F47D4A",
-transform:"translate(120px,20px)",
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight:" 700",
-lineHeight: "normal"}}>$23</TableCell>
-<TableCell align="left" component="th" scope="row" style={{transform:"translate(-162px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}>53 pcs</text> 
-              </TableCell>
-              <TableCell align="right" component="th" scope="row" style={{transform:"translate(-72px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img style={{transform:"translateX(-10px)"}} src={red}/>Out of Stock</text> 
-              </TableCell>
-            </TableRow>
-            <TableRow sx={{
-                '& th': { border: "none" },
-                '& td': { border: "none" }
-              }}>
-            
-              <TableCell component="th" scope="row" style={{alignItems:"center" ,height:"65px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img  style={{alignItems:"center" , transform:"translateY(15px)",paddingRight:"15px"}}src={gray}/>Erigo T-Shirts Green</TableCell>
-              
-              <TableCell component="th" scope="row" align="left" style={{color: "#F47D4A",
-transform:"translate(120px,20px)",
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight:" 700",
-lineHeight: "normal"}}>$23</TableCell>
-            <TableCell align="left" component="th" scope="row" style={{transform:"translate(-162px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}>53 pcs</text> 
-              </TableCell>
-            <TableCell align="right" component="th" scope="row" style={{transform:"translate(-97px,20px)"}}>
-              <text style={{transform:"translateX(800px)",width:"2px",margin:"0px",color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "14px",
-fontStyle: "normal",
-fontWeight: "600",
-lineHeight: "normal"}}><img style={{transform:"translateX(-10px)"}} src={green}/>In Stock</text> 
-              </TableCell>
-            </TableRow>
-            <TableRow sx={{
-                '& th': { border: "none" },
-                '& td': { border: "none" }
-              }}>
-             
-                
-            </TableRow>
-          </TableBody>
-        </Table>
-      </TableContainer>
+     </div>
     </ResponsiveContainer>
   );
 }

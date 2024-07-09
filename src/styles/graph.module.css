@@ -1,7 +1,7 @@
 .lineGraph{
    
     width: 714.243px;
-    height: 498px;
+    height: 448px;
     border-radius: 20.366px;
 border: 2px solid #EFEEEB;
 
@@ -28,9 +28,9 @@ font-weight: 700;
 line-height: normal;
 }
 .fig{
-    transform:translateY(-5px);
+    transform:translateY(0px);
   
-    gap:40px;
+    gap:60px;
     align-items:center;
     display:flex;
 }
@@ -50,7 +50,8 @@ line-height: normal;
     justify-content: space-between;
 }
 .month{
-   transform:translate(-25px,40px);
+   margin-top:30px;
+   margin-right:40px;
    border:none;
    height:35px;
    padding-top:0px;

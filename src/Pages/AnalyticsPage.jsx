@@ -30,7 +30,7 @@ const AnalyticsPage=()=>{
     <div style={{
             display:"flex",
             justifyContent:"space-around",
-            gap:"160px",
+            gap:"150px",
             
           
            
@@ -77,7 +77,7 @@ const AnalyticsPage=()=>{
                     <img src={dots}/>
                 </div>
                 <div className={styles.row2}>
-                    <p className={styles.total}>Total Sales</p>
+                    <p className={styles.total}>Online Sessions</p>
                     <p className={styles.number}>$130,234</p>
                 </div>
                 <div className={styles.row3}>
@@ -88,7 +88,7 @@ const AnalyticsPage=()=>{
             </div>
         </div>
         </div>
-        <div className={styles.sellProducts}>
+        <div >
         
             <div className={styles.sellHead}>
                 {/* <p style={{color: "#000",
@@ -111,52 +111,8 @@ lineHeight: "normal"}}>Selling Products</p>
                 </select> */}
                 
             </div>
-            <div className={styles.table}>
-            <div style={{display:"flex", justifyContent:"space-between",zIndex:"2" ,paddingLeft:"30px",paddingRight:"30px",transform:"translateY(10px)"}}>
-          <text style={{color: "#000",
-
-fontFamily: "Apfel Grotezk",
-fontSize: "18px",
-fontStyle: "normal",
-fontWeight: "400",
-lineHeight: "normal"}} >Selling Products</text>
-          <div style={{ position: 'relative', display: 'inline-block' }}>
-      <select style={{
-        height: "30px",
-        border: "none",
-        padding: "7px",
-        paddingLeft: "9px",
-        paddingRight: "34px",  // Add padding to the right side
-        borderRadius: "12px",
-        background: "#F6F6F6",
-        color: "#000",
-        fontFamily: "Apfel Grotezk",
-        fontSize: "14px",
-        fontStyle: "normal",
-        fontWeight: "400",
-        lineHeight: "normal",
-        appearance: "none", // Remove default arrow
-        WebkitAppearance: "none", // For Safari
-        MozAppearance: "none", // For Firefox
-      }}>
-        <option>8 Jul - 24 Jul</option>
-        <option>8-24 July</option>
-        <option>8-24 July</option>
-        <option>8-24 July</option>
-      </select>
-      <div style={{
-        
-        position: 'absolute',
-        top: '50%',
-        right: '15px', // Adjust this value to control the padding
-        pointerEvents: 'none',
-        transform: 'translateY(-50%)',
-        borderLeft: '5px solid transparent',
-        borderRight: '5px solid transparent',
-        borderTop: '5px solid #000', // Adjust color to match the text
-      }}></div>
-    </div>
-                </div>
+            <div >
+           
             <AccessibleTableTwo/>
             </div>
            

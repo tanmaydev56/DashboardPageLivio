@@ -31,7 +31,7 @@ const Analytics = () => {
     });
 
     return (
-        <div>
+        <div style={{boxShadow:"4px 4px 16px 0px rgba(0, 0, 0, 0.10), -4px -4px 16px 0px rgba(244, 125, 74, 0.10)",borderRadius:"20px"}}>
             <Graph chartData={userData} />
         </div>
     );
